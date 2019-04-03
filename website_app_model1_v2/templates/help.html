@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HELP ME!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="../static/css/style.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../static/img/logo.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">ScentSoul Story</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Contact Me</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+  <!-- Header -->
+  <header class="intro-header">
+     <div class="container-fluid padding" >
+         <div class="col-lg-6 order-lg-2" >
+      <h1 style="font-family:kefa;" ><br><font color=  #ffffff>   Hey, Take a Quiz </font></h1>
+      <h4 style="font-family:kefa;"><font color= #ffffff>   Tell me something about you... </font></h4>
+      <br></br>
+         </div>
+    </div>
+  </header>
+
+
+  <div class="container-fluid padding" >
+    <div class="recommendations">
+      <br></br>
+       <form action = "/result" method="GET|POST">
+
+
+    </div>
+
+
+    <div class="row text-center" > 
+      <div class="col-md-4" >
+              <dt>
+                <span> 1. What keywords you want to express?</span>
+                <hr>
+                </hr>
+                    <!-- <p class="multiSel"></p> -->
+              </dt>
+                <div class="mutliSelect">
+                        <ul style="list-style-type:none">
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="甜美" />Sweet</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="温柔" />Gentle</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="优雅" />Elegant</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="成熟" />Mature</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="性感" />Sexy</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="女人味" />Feminine</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="清新" />Fresh</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="经典" />Classy</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="淡雅" />Soft</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="平易近人" />Easygoing</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="邻家女孩" />The girl next door</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="少女" />Young lady</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="可爱" />Lovely</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="活泼" />Lively</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="干净" />Clean</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="夏天" />Summer</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="清爽" />Refreshing</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="温暖" />Warm</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="男人味" />Masculine</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="稳重" />Reliable</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="神秘" />Mysterious</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="深沉" />Low profile</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="浓郁" />Strong smell</li>
+                        <li>
+                            <input type="checkbox" class="pull-left" name='note' value="冬天" />Winter</li>
+                    
+                        </ul>
+                </div>
+      </div>
+      
+      <div class="col-md-4">
+        <dt>
+          <span>2. What notes do you like?</span>
+          <hr>
+          </hr>
+        <!-- <p class="multiSel"></p> -->
+         </dt>
+            <div class="mutliSelect">
+                    <ul style="list-style-type:none">
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="麝香" />Musk</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="茉莉" />Jasmine</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="玫瑰" />Rose</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="香柠檬" />Bergamot</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="柠檬" />Lemon</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="橙花" />Neroli</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="薰衣草" />Lavender</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="铃兰" />Lily of the valley</li
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="零陵香豆" />Tonka bean</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="紫罗兰" />Violet</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="葡萄柚" />Grapefruit</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="鸢尾花" />Iris</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="依兰" />Ylang-Ylang</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="桃子" />Peach</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="橙子" />Orange</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="胡椒" />Pepper</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="小豆蔻" />Cardamom</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="小苍兰" />Freesia</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="绿叶" />Green leaves</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="皮革" />Leather</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="广藿香" />Patchouli</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="雪松" />Cedrus</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="香根草" />Vetiver</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='note' value="香草" />Vanilla</li>
+                     </ul>
+            </div>
+        </dd>
+      </div>
+      <div class="col-md-4">
+       <dt>
+        <span>3. What themes do you like?</span>
+        <hr>
+        </hr>
+        <!-- <p class="multiSel"></p> -->
+       </dt>
+            <div class="mutliSelect">
+                <ul style="list-style-type:none">
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="花香调" />Floral</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="花香果香调" />Floral Fruity</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="东方花香调" />Oriental Floral</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="木质花香调" />Woody Floral</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="木质馥奇香调" />Woody Fougere</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="馥奇香调" />Fougere</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="木质东方调" />Oriental Woody</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="东方调" />Oriental</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="柑橘馥奇香调" />Citrus Fougere</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="东方美食调" />Oriental Gourmand</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="辛辣木质调" />Woody Spicy</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="花香甘苔调" />Chypre Floral</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="花果香美食调" />fruity Gourmand</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="绿叶花香调" />Floral Green</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="辛辣东方调" />Oriental Spicy</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="辛辣馥奇香调" />Spicy Fougere</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="柑橘调" />Citrus</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="木质调" />Woody</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="皮革调" />Leather</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="果香馥奇香调" />Fruity Fougere</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="东方馥奇香调" />Oriental Fougere</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="水生花香调" />Floral Aquatic</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="水生馥奇香调" />Aquatic Fougere</li>
+                    <li>
+                        <input type="checkbox" class="pull-left" name='theme' value="甘苔调" />Chypre</li>
+          
+                </ul>
+            </div>
+      </div>
+
+
+        <div class="col-12 text-center">
+            <p> <input type ="submit" class="btn btn-outline-light btn-lg" value="Get my perfumes" > </p>
+        </div>
+
+      </form>
+</div>
+
+      <!-- /.container -->
+    </section>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <!-- <script src="static/js/my_style.js"></script> -->
+
+
+
+
+<!--- Footer -->
+<footer>
+  <div id="footer" class="container-fluid padding" >
+    <div class="row text-center" >
+      <div class="col-md-4" >
+        <img src="../static/img/w3newbie.png" style="width:190px;height:50px;">
+        <hr class="light">
+        <p>408-858-8858</p>
+        <p>wyywenyi@gmail.com</p>
+        <p>28588 Anchorage Ln </p>
+        <p>Hayward, CA, US</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <h5>Our Hours</h5>
+        <hr class="light">
+        <p>Monday: 9 am - 4 pm</p>
+        <p>Saturday: 10am - 3 pm</p>
+        <p>Sunday: closed</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <h5>Services</h5>
+        <hr class="light">
+        <p>SHANGHAI ,  CHINA </p>
+        <p>PARIS ,  FRANCE</p>
+        <p>NEW YORK ,  USA</p>
+        <p>LONDON ,  UK</p>
+      </div>
+      <div class="col-12">
+        <hr class="light-100">
+        <h5>&copy; www.scentsoul.com </h5>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
