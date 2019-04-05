@@ -19,18 +19,18 @@
     <h5 class="card-title">Gender Classifier</h5>
     <hr/>
     <p class="card-text"><div class="alert alert-danger" role="alert">
-  {{ name }}  
+  {{ name }}
 </div></p>
 
 <!-- Main ML Prediction Display Here -->
-    {% if prediction >  0 %}
+    {% if prediction > 0 %}
     <p class="card-text"><div class="alert alert-danger" role="alert">
-  {{ prediction }}   <!-- 此处注意：Main ML Prediction Display Here {{}} 用{{}} 显示变量-->  
+  {{ prediction }}
 </div></p>
     <a href="#" class="btn btn-danger">Female</a>
      {% elif prediction < 1 %}
 	<p class="card-text"><div class="alert alert-danger" role="alert">
-  my_prediction
+  {{prediction}}
 </div></p>
     <a href="#" class="btn btn-primary">Male</a>
     {% endif%}

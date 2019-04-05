@@ -34,7 +34,7 @@ def predict():
 	clf = joblib.load(naivebayes_model)
 
 	# Receives the input query from form
-	####################################################  此处需要 变成array [[ ]]    ##################################
+	####################################################  array #################################
 	if request.method == 'POST':
 		#namequery = request.form['namequery']
 		namequery = aa

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MY CAR VALUE!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootsrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../static/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Navigation <iframe type = "text/html" src="https://www.youtube.com/embed/MB80ZuIJATI?autoplay=1" width="0" height="0" frameborder="0" allow="autoplay" allowfullscreen></iframe> -->
+
+</head>
+
+<body>
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">
+			<img src="../static/img/logo.png">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="/">Home</a>
+ 				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="#">CarMate Story</a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="#">Contact Me</a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link" href="inspire.html">Sign In</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!--- Welcome Section --> 
+<div class="container-fluid padding px-0">
+	<div class="row welcome text-center" >
+		<div class="col-12" >
+			<h1 style="font-family:kefa;" class="display-5">我的二手车</h1>
+		</div>
+	</div>	
+</div>
+
+
+
+<!-- option-->
+<div class="container-fluid px-0" >
+<form action="/regression" method = "POST">
+
+<div class="row text-center" >
+
+
+
+	<div class="col-md-4" >
+		<div class = "box">
+			<select name = 'make'>
+				<option name = "make" value = 'toyota' >请选择品牌</option>
+				<option name = "make" value = 'toyota'>丰田</option>
+				<option name = "make" value = 'toyota' disabled >其余品牌更新中</option>
+			</select>
+		</div>
+	</div>
+
+
+	<div class="col-md-4" >
+		<div class = "box">
+			<select name = ''>
+				<option name = "model" value = 'corolla' >请选择型号</option>
+				<option name = "model" value = 'corolla'>卡罗拉</option>
+				<option name = "model" value = 'corolla' disabled>其余型号更新中</option>
+			</select>
+		</div>
+	</div>
+
+
+
+	<div class="col-md-4" >
+		<div class = "box">
+			<select name = 'year'>
+				<option name = "year" value = 2007>请选择年款</option>
+				<option name = "year" value = 2007>2007款</option>
+				<option name = "year" value = 2008>2008款</option>
+				<option name = "year" value = 2009>2009款</option>
+				<option name = "year" value = 2010>2010款</option>
+				<option name = "year" value = 2011>2011款</option>
+				<option name = "year" value = 2012>2012款</option>
+				<option name = "year" value = 2013>2013款</option>
+				<option name = "year" value = 2014>2014款</option>
+				<option name = "year" value = 2015>2015款</option>
+				<option name = "year" value = 2016>2016款</option>
+				<option name = "year" value = 2017>2017款</option>
+				<option name = "year" value = 2018>2018款</option>
+				<option name = "year" value = 2019>2019款</option>
+			</select>
+		</div>
+	</div>
+
+
+	<div class="col-md-4" >
+		<div class = "box">
+			<select name = 'transmission'>
+				<option name = "transmission" value = 'AT'>请选择排档</option>
+				<option name = "transmission" value = 'AT'>自排</option>
+				<option name = "transmission" value = 'MT'>手排</option>
+				<option name = "transmission" value = 'AT'>手自一体</option>
+			</select>
+		</div>
+	</div>
+
+
+	<div class="col-md-4" >
+		<div class = "inputbox">
+			<input class = "inputbox" name="miles" placeholder="输入累计公里数" type="number">
+		</div>
+	</div>
+
+
+	<div class="col-md-4" >
+		<div class = "inputbox">
+			<input class = "inputbox" name="age_month" placeholder="输入车龄累计月数" type="number">
+		</div>
+	</div>
+
+
+	<div class="col-md-4" >
+		<div class = "box">
+			<select name = 'color'>
+				<option name = "color" value = 'white'>请选择颜色</option>
+				<option name = "color" value = 'white'>白色</option>
+				<option name = "color" value = 'black'>黑色</option>
+				<option name = "color" value = 'silver'>银色</option>
+				<option name = "color" value = 'golden'>金色</option>
+				<option name = "color" value = 'brown'>棕色</option>
+				<option name = "color" value = 'white'>其他</option>
+			</select>
+		</div>
+	</div>
+
+
+	<div class="col-md-4" >
+		<div class = "box">
+			<select name = 'source'>
+				<option name = "source" value = 'platform_source' >请选择交易渠道</option>
+				<option name = "source" value = 'merchandise_source'>委托线下商户</option>
+				<option name = "source" value = 'individual_sale'>个人售卖</option>
+				<option name = "source" value = 'platform_source'>线上平台</option>
+				<option name = "source" value = 'platform_source'>其他平台</option>
+			</select>
+		</div>
+	</div>
+
+
+
+	<div class="col-md-4" >
+		<div class = "box">
+			<select name = 'province'>
+				<option name = "province" value = 'beijing' >请选择交易地区</option>
+				<option name = 'province' value = 'anhui' >安徽</option>
+				<option name = 'province' value = 'beijing' >北京</option>
+				<option name = 'province' value = 'chongqing' >重庆</option>
+				<option name = 'province' value = 'fujian' >福建</option>
+				<option name = 'province' value = 'gansu' >甘肃</option>
+				<option name = 'province' value = 'guangdong' >广东</option>
+				<option name = 'province' value = 'guangxi' >广西</option>
+				<option name = 'province' value = 'guizhou' >贵州</option>
+				<option name = 'province' value = 'hainan' >海南</option>
+				<option name = 'province' value = 'hebei' >河北</option>
+				<option name = 'province' value = 'heilongjia' >黑龙江</option>
+				<option name = 'province' value = 'henan' >河南</option>
+				<option name = 'province' value = 'hubei' >湖北</option>
+				<option name = 'province' value = 'hunan' >湖南</option>
+				<option name = 'province' value = 'jiangsu' >江苏</option>
+				<option name = 'province' value = 'jiangxi' >江西</option>
+				<option name = 'province' value = 'jilin' >吉林</option>
+				<option name = 'province' value = 'liaoning' >辽宁</option>
+				<option name = 'province' value = 'neimenggu' >内蒙古</option>
+				<option name = 'province' value = 'ningxia' >宁夏</option>
+				<option name = 'province' value = 'qinghai' >青海</option>
+				<option name = 'province' value = 'shandong' >山东</option>
+				<option name = 'province' value = 'shanghai' >上海</option>
+				<option name = 'province' value = 'shannxi' >陕西</option>
+				<option name = 'province' value = 'shanxi' >山西</option>
+				<option name = 'province' value = 'sichuan' >四川</option>
+				<option name = 'province' value = 'tianjin' >天津</option>
+				<option name = 'province' value = 'tibet' >西藏</option>
+				<option name = 'province' value = 'xinjiang' >新疆</option>
+				<option name = 'province' value = 'yunnan' >云南</option>
+				<option name = 'province' value = 'zhejiang' >浙江</option>
+			</select>
+		</div>
+	</div>
+
+
+
+
+
+	<button type="submit" class="btn2 btn-outline-light btn-lg">查看价格</button>
+
+
+</div>
+
+
+</form>
+</div>
+
+</body>
+</html>

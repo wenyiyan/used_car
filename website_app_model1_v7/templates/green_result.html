@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MY CAR VALUE!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootsrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../static/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Navigation <iframe type = "text/html" src="https://www.youtube.com/embed/MB80ZuIJATI?autoplay=1" width="0" height="0" frameborder="0" allow="autoplay" allowfullscreen></iframe> -->
+
+</head>
+
+<body>
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../static/img/logo.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">CarMate Story</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Contact Me</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="inspire.html">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+<!--- resutl -->
+<!--- first -->
+<div class="container-fluid padding" style = 'margin-bottom: 0px'>
+</div>  
+
+
+<!--- second/1 -->
+<div class="container-fluid padding">
+    <div class="row padding">
+    <div class="col-lg-1" >
+    </div>
+
+<!--- second/2 -->
+    <div class="col-lg-6">
+        <img src="../static/img/team9.png" class="img-center" style = 'margin-top: 5px'>
+    </div>
+
+<!--- second/3 -->
+    <div class=" col-lg-4">
+      <div class="container-fluid px-0" style = 'margin-top: 10px' >
+
+    <!-- Main ML Prediction Display Here -->
+    {% if prediction >  0 %}
+    <p class="card-text">
+      <div class="alert alert-danger" role="alert">
+       <h2> RMB </h2>
+       <h1 style= font-size:140px >{{ prediction }}</h1> 
+       <h2> 万元  </h2> <!-- Main ML Prediction Display Here  -->  
+       </div></p>
+
+     {% elif prediction < 1 %}
+     <p class="card-text">
+      <div class="alert alert-danger" role="alert">
+      <h1> <{{ prediction }}</h1>
+    </div></p>
+        
+    {% endif%}
+
+
+
+      <div class="container">
+      <div class="row">
+      
+          <div class="col-xs-6">
+              <form action="/green" >
+                <button type="submit" class="btn1 btn-outline-light btn-lg">再看一辆</button>
+              </form>
+          </div>
+
+          <div class="col-xs-6">
+              <form action="/" >
+                <button type="submit" class="btn1 btn-outline-light btn-lg">回到首页</button>
+              </form>
+          </div>
+      
+      </div>
+      </div>
+
+     
+
+
+
+  
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<!--- Footer -->
+<footer>
+  <div id="footer" class="container-fluid padding" >
+    <div class="row text-center" >
+      <div class="col-md-4" >
+        <img src="../static/img/w3newbie.png" style="width:190px;height:50px;">
+        <hr class="light">
+        <p>408-767-7195</p>
+        <p>service@carmate.com</p>
+        <p>3303 Scott Blvd </p>
+        <p>Santa Clara, CA, US</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <h5>Our Hours</h5>
+        <hr class="light">
+        <p>Monday: 9 am - 4 pm</p>
+        <p>Saturday: 10am - 3 pm</p>
+        <p>Sunday: closed</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <h5>Services</h5>
+        <hr class="light">
+        <p>SHANGHAI ,  CHINA </p>
+        <p>SILICON VALLEY ,  USA</p>
+        <p>NEW YORK ,  USA</p>
+        <p>LONDON ,  UK</p>
+      </div>
+      <div class="col-12">
+        <hr class="light-100">
+        <h5>&copy; www.carmate.com </h5>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
